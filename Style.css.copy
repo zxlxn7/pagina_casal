@@ -1,0 +1,85 @@
+/* ---------- RESET BÁSICO ---------- */
+/* Remove margens e padding padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total dos elementos */
+}
+
+/* ---------- CORPO DA PÁGINA ---------- */
+body {
+    font-family: Arial, sans-serif; /* Fonte usada no site (pode trocar por 'Georgia', 'Verdana', etc) */
+    background-color: #f8f9fa; /* Cor de fundo da página (altere para testar cores: #fff, #000, etc) */
+    color: #333; /* Cor do texto padrão (pode trocar por branco #fff ou outra cor qualquer) */
+    line-height: 1.6; /* Altura da linha do texto — aumente para espaçar mais */
+    padding: 20px; /* Espaçamento interno do body */
+}
+
+/* ---------- CABEÇALHO ---------- */
+.header {
+    background-color: #e63946; /* Cor de fundo do cabeçalho (altere para experimentar outras cores) */
+    color: white; /* Cor do texto dentro do cabeçalho */
+    padding: 40px 20px; /* Espaçamento superior/inferior e laterais */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    border-radius: 10px; /* Cantos arredondados do cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+/* ---------- SEÇÕES GERAIS ---------- */
+section {
+    margin: 20px 0; /* Espaçamento entre as seções */
+    padding: 20px; /* Espaçamento interno das seções */
+    background-color: #ffffff; /* Cor de fundo da seção */
+    border: 1px solid #ddd; /* Borda fina ao redor */
+    border-radius: 8px; /* Cantos arredondados */
+    transition: transform 0.2s; /* Animação suave ao passar o mouse */
+}
+.text {
+    margin: 20px 0; /* Espaçamento entre as seções */
+    padding: 20px; /* Espaçamento interno das seções */
+    background-color: #012ffd; /* Cor de fundo da seção */
+    border: 1px solid #ddd; /* Borda fina ao redor */
+    border-radius: 8px; /* Cantos arredondados */
+    transition: transform 0.2s; /* Animação suave ao passar o mouse */
+}
+
+/* ---------- EFEITO HOVER NAS SEÇÕES ---------- */
+section:hover {
+    transform: scale(1.02); /* Faz a seção "aumentar" levemente ao passar o mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+}
+
+/* ---------- IMAGENS ---------- */
+/* Quando adicionar uma imagem, esta classe pode ajudar a estilizar */
+img {
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Deixa os cantos arredondados */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* ---------- TEXTO IMPORTANTE / DATAS ---------- */
+/* Classe exemplo para destacar datas ou informações importantes */
+.highlight {
+    background-color: #ffe066; /* Cor de fundo para destaque */
+    font-weight: bold; /* Texto em negrito */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+/* Altere este bloco para testar como o layout se comporta em telas menores */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 18px; /* Reduz o tamanho do texto no cabeçalho */
+    }
+
+    section {
+        padding: 10px;
+    }
+}

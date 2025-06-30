@@ -1,0 +1,59 @@
+/* ---------- RESET BÁSICO ---------- */
+/* Remove margens e padding padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total dos elementos */
+}
+
+/* ---------- CORPO DA PÁGINA ---------- */
+body {
+    
+}
+
+/* ---------- CABEÇALHO ---------- */
+.header {
+    text-align: center;        /* Centraliza o texto dentro da section */
+    font-weight: bold;         /* Deixa o texto em negrito */
+    margin: 0 auto;            /* Centraliza a section horizontalmente (em alguns casos úteis com largura definida) */
+    width: 100%;               /* Garante que a section ocupe toda a largura (pode ser ajustado) */
+    padding: 20px;             /* Espaço interno opcional para melhor visual */
+}
+
+/* ---------- SEÇÕES GERAIS ---------- */
+section {
+    
+}
+
+/* ---------- EFEITO HOVER NAS SEÇÕES ---------- */
+section:hover {
+    
+}
+
+/* ---------- IMAGENS ---------- */
+/* Quando adicionar uma imagem, esta classe pode ajudar a estilizar */
+img {
+    
+}
+
+/* ---------- TEXTO IMPORTANTE / DATAS ---------- */
+/* Classe exemplo para destacar datas ou informações importantes */
+.highlight {
+    
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+/* Altere este bloco para testar como o layout se comporta em telas menores */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 18px; /* Reduz o tamanho do texto no cabeçalho */
+    }
+
+    section {
+        padding: 10px;
+    }
+}
